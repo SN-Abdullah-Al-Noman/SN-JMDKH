@@ -371,7 +371,7 @@ async def zip_leech(client, message):
     _mirror_leech(client, message, True, isLeech=True)
 
 async def qb_leech(client, message):
-    _mirror_leech(client, message, isQbit=True)
+    _mirror_leech(client, message)
 
 async def qb_unzip_leech(client, message):
     _mirror_leech(client, message, extract=True, isLeech=True)
