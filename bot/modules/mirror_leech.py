@@ -353,13 +353,13 @@ async def zip_mirror(client, message):
     _mirror_leech(client, message, True)
 
 async def qb_mirror(client, message):
-    _mirror_leech(client, message, isQbit=True)
+    _mirror_leech(client, message)
 
 async def qb_unzip_mirror(client, message):
-    _mirror_leech(client, message, extract=True, isQbit=True)
+    _mirror_leech(client, message, extract=True)
 
 async def qb_zip_mirror(client, message):
-    _mirror_leech(client, message, True, isQbit=True)
+    _mirror_leech(client, message, True)
 
 async def leech(client, message):
     _mirror_leech(client, message, isLeech=True)
@@ -371,13 +371,13 @@ async def zip_leech(client, message):
     _mirror_leech(client, message, True, isLeech=True)
 
 async def qb_leech(client, message):
-    _mirror_leech(client, message, isQbit=True, isLeech=True)
+    _mirror_leech(client, message, isQbit=True)
 
 async def qb_unzip_leech(client, message):
-    _mirror_leech(client, message, extract=True, isQbit=True, isLeech=True)
+    _mirror_leech(client, message, extract=True, isLeech=True)
 
 async def qb_zip_leech(client, message):
-    _mirror_leech(client, message, True, isQbit=True, isLeech=True)
+    _mirror_leech(client, message, True, isLeech=True)
 
 async def cloneNode(client, message):
     _mirror_leech(client, message, isClone=True)
